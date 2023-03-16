@@ -7,11 +7,16 @@
     <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
-    <script>
+    <script type="text/JavaScript" src="motor.js">
     </script>
 </head>
 <body>
-	<br />
-    This is a template for Monaca app.
+	<input type="number" style="width:50%; height:10vh; background-color: dark-gray;color: lime;" id="km" placeholder="KM Percorrido" step="0.1">
+    <br>
+    <input type="number" style="width:50%; height:10vh; background-color: dark-gray;color: lime;" id="litros" placeholder="Litros Consumido" step="0.1">
+    <br>
+    <input type="button" style="width:50%; height:10vh; background-color: green ;color: white;" id="btn" value="Calcular" onclick="update()">
+    <br>
+    <h1 id="resultado"></h1>
 </body>
 </html>
